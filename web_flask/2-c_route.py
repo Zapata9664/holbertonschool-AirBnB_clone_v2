@@ -19,9 +19,9 @@ def print_HBNB():
 
 
 @app.route("/c/<text>", strict_slashes=False)
-def print_text(text):
+def text(text):
     """Display c + text"""
-    text = text.replace('_', ' ')
+    text = text.replace("_", " ")
     return (f"C {text}")
 
 
