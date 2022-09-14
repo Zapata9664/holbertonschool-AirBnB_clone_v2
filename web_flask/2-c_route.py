@@ -22,7 +22,7 @@ def print_HBNB():
 def text(text):
     """Display c + text"""
     text = text.replace("_", " ")
-    return (f"C {text}")
+    return ("C {}".format(text))
 
 
 if __name__ == "__main__":
