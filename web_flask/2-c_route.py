@@ -18,7 +18,7 @@ def print_HBNB():
     return "HBNB"
 
 
-@app.route("/c/<text>")
+@app.route("/c/<text>", strict_slashes=False)
 def print_text(text):
     """Display c + text"""
     text = text.replace('_', ' ')
