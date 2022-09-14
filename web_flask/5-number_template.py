@@ -2,6 +2,7 @@
 """Starts a Flask web application"""
 
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -37,6 +38,12 @@ def python_text(text):
 def display_int(n):
     """Display a int number"""
     return ("{} is a number".format(n))
+
+
+@app.route("/number_template/<int:n>", strict_slashes=False)
+def display_html(n):
+    """Display html"""
+    return render_template('5-number.html', n=n)
 
 
 if __name__ == "__main__":
