@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-"""Module fot Class DBStorage"""
-
-
-from sqlalchemy import create_engine
+"""New engine DBStorage"""
+from sqlalchemy import (create_engine)
 from os import getenv
 from models.base_model import Base
 from models.amenity import Amenity

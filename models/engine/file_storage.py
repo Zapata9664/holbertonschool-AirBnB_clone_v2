@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""New FileStorage"""
+"""
+Contains the FileStorage class
+"""
 
 import json
 from models.amenity import Amenity
@@ -66,3 +68,4 @@ class FileStorage:
     def close(self):
         """Call reload() method for deserializing the JSON file to objects"""
         self.reload()
+
