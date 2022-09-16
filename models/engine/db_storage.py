@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module fot Class DBStorage"""
+
+
 from models.base_model import Base
 from models.user import User
 from models.state import State
